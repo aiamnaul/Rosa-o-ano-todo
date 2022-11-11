@@ -20,13 +20,13 @@
 }
 
 .logo{
-  background: pink url(../images/logo.jpg);
   flex: 0 1 200px;
   width: 100%;
   height: auto;
   background-size: cover;
   background-position: center;
 }
+
 body {
   display: flex;
   flex-wrap: wrap;
@@ -44,12 +44,17 @@ body {
   display: flex;
   margin: 3px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px #F270DF;
-  overflow: hidden;
+}
+
+.logo{
+  border-radius: 20px;
 }
 
 .header-cabeçalho {
   flex: 1 1 100vw;
+  background-color: pink;
+  box-shadow: 0px 0px 10px #F270DF;
+  border-color: #F270DF;
 }
 
 
@@ -71,10 +76,14 @@ body {
   flex: 1 1 100vw;
   align-items: center;
   justify-content: center;
+  background-color: pink;
 }
 nav a {
   margin: 3%;
   font-size: 20pt;
+  color: #F270DF;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main {
@@ -149,4 +158,17 @@ a {
     opacity: 0;
     transition: 0.3s;
   }
+}
+
+.dropdown {
+  background-color: pink;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btn-secondary{
+  background: #F270DF;
+  color: #fff;
+  box-shadow: #F270DF;
 }
