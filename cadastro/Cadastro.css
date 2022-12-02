@@ -5,29 +5,28 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
 }
 
-*::-webkit-scrollbar-track{
+*::-webkit-scrollbar-track {
   background: pink;
 }
 
-*::-webkit-scrollbar-thumb{
-  background-color: #F270DF;
+*::-webkit-scrollbar-thumb {
+  background-color: #f270df;
   border-radius: 20px;
-  border: 3px solid #F270DF;
+  border: 3px solid #f270df;
   width: 12px;
 }
 
 body {
-  background-color: pink;
+  background: linear-gradient(35deg, LightPink 30%, GhostWhite);;
   height: 100%;
   width: 100%;
 }
 
 .cadastro {
-  position: flex;
   margin-top: 25%;
   margin-left: 35%;
   margin-bottom: 25%;
@@ -39,52 +38,77 @@ body {
   box-shadow: 0px 0px 10px #f270df;
 }
 
-.cadastro .formularioCadastro{
+.cadastro .formularioCadastro {
   display: block;
   padding: 10px;
 }
 
-.cadastro h1{
+.cadastro h1 {
   text-align: center;
   margin-bottom: 10px;
-  color: #F270DF;
+  color: #f270df;
 }
 
-.cadastro p{
+.cadastro p {
   font-size: 1;
-  color: #F270DF;
+  color: #f270df;
   text-align: center;
 }
 
 .material-symbols-outlined {
-  color: #F270DF; 
+  color: #f270df;
 }
 
-#button{
-  display: flex;
+#button {
   font-size: 1em;
-  margin: 5px;
-  width: 100%;
+  width: 50%;
   height: 30px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: pink;
-  box-shadow: 0px 0px 10px #F270DF;
+  background-color: black;
+  box-shadow: 0px 0px 10px #f270df;
   border: none;
-  color: #F270DF;
+  color: #f270df;
   justify-content: center;
-  
+  text-align: center;
+  margin-left: 25%;
 }
 
-#iname, #iemail, #isenhaCadastro {
+#iname,
+#iemail,
+#isenhaCadastro {
   background-color: rgb(253, 193, 202);
   border-radius: 10px;
   height: 30px;
   width: 80%;
-  box-shadow: 0px 0px 10px #F270DF;
+  box-shadow: 0px 0px 10px #f270df;
   border: none;
   margin: 10px;
   text-align: center;
+  color: #f270df;
 }
- 
-#campoCadastroSenha, 
+
+@media only screen and (max-width: 923px) {
+  .cadastro{
+    height: 70%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 717px)  {
+
+  .cadastro{
+    height: 70%;
+    width: 50%;
+  }
+
+  .cadastro p{
+    font-size: 0.3;
+  }
+
+  .iname,
+  .iemail,
+  .isenhaCadastro {
+
+  }
+  
+}

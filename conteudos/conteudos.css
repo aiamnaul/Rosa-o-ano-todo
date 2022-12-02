@@ -20,7 +20,7 @@
 }
 
 #fundo{
-  background-color: pink;
+  background: linear-gradient(35deg, LightPink 30%, GhostWhite);
   width: 100%;
   height: 100%;
 }
@@ -29,7 +29,7 @@
   display: flex;
   width: 100%;
   height: 10vh;
-  background-color: pink;
+  background: pink;
   border-radius: 10px;
   text-align: center;
   align-items: center;

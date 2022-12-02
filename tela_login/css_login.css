@@ -22,7 +22,7 @@
 
 body,
 html {
-  background-color: pink;
+  background: linear-gradient(35deg, LightPink 30%, GhostWhite);;
   height: 120vh;
   width: 120vw;
 }
