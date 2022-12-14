@@ -77,12 +77,16 @@ main {
   margin: auto;
   border-radius: 10px;
   margin-top: 2%;
+  flex-direction: column;
 }
 
 p {
-  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  flex-direction: column;
+
 }

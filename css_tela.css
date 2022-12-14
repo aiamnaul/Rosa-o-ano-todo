@@ -66,7 +66,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(255,255,255,0.2);
+  background-color: #eb92dd;
   
 }
 
@@ -98,7 +98,7 @@ html {
 
 .logo {
   border-radius: 10px;
-  background: url(../tela_inicial/images/logo3.jpeg);
+  background: url(../Rosa-o-ano-todo/images/logo3.jpeg);
   position: relative;
   background-size: 100%;
   background-position: center;
