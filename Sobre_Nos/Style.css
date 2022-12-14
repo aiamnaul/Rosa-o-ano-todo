@@ -70,6 +70,7 @@ section .card .image img{
   color: #f270df;
   transition: all 0.3s ease;
   cursor: pointer;
+  
 }
 
 .card .media-icons i:hover{
@@ -88,6 +89,12 @@ section .card .image img{
 .name-int .name{
   font-size: 20px;
   font-weight: 600;
+}
+
+.name-int .name img{
+  position: relative;
+  width: 5%;
+  height: 5%;
 }
 
 .name-int .idade{

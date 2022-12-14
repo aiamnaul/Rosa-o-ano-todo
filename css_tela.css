@@ -98,7 +98,7 @@ html {
 
 .logo {
   border-radius: 10px;
-  background: url(..//images/logo3.jpeg) no-repeat center center;
+  background: url(../tela_inicial/images/logo3.jpeg);
   position: relative;
   background-size: 100%;
   background-position: center;
