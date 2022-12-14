@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rosa o Ano Inteiro - Simulador Ciclo Menstrual</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rosa o Ano Inteiro - Simulador Ciclo Menstrual</title>
+</head>
+<body>
+
+  <section class="hero is-primary has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-1">Simulador de Ciclo Menstrual</h1>
+    </div>
+  </div>
+  </section>
+  
+  <section id="app" class="section content has-text-centered">
+    
+<transition name="fade" mode="out-in">
+    <div class="content columns level is-centered
+" v-if="!calcReturned" key="calendar">
+
+      <div class="column is-one-third level has-text-centered ">
+        <p class="subtitle">Selecione o último dia da sua última menstruação:</p>
+        <vuejs-datepicker :inline="true" v-model="date">{{ date }}</vuejs-datepicker>
+      </div>
+
+      <div class="column is-one-third has-text-centered level">
+        <p>O seu ciclo é composto de quantos dias?</p>
+        <div class="select is-primary">
+          <select name="days" v-model="cycleSelected">
+            <option v-for="n in 45" v-if="n >= 20">{{ n }}</option>
+          </select>
+        </div>
+
+        <div class="level-item">
+          <button class="button is-large is-primary is-rounded " id="calculate-btn" @click="startCalc(); calculateFertileBegin(); calculateFertileEnds(); calculateDueDate();">Calcular</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="content has-text-centered" v-else key="result">
+
+      <p class="subtitle">Aqui estão os resultados com base nas informações que você forneceu:</p>
+      <p>Seu próximo período fértil é de <strong>{{ fertileFrom }}</strong> a <strong>{{ fertileUntil }}</strong>.</p>
+      <p>Sua próxima menstruação está prevista para <strong>{{ dueDate }}</strong>.</p>
+      <div class="level-item">
+        <button class="button is-large is-primary is-rounded" id="resetCalc" @click="resetCalc">Calcular Novamente</button>
+      </div>
+
+    </div>
+</transition>
+    
+    <div class="notification is-full">*Isto é apenas um simulador e poderá ocorrer divergências. <br>Em casos de dúvidas consulte seu médico. </div>
+
+  </section>
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<script src='https://unpkg.com/vuejs-datepicker'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
