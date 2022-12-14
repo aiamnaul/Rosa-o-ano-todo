@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(35deg, LightPink 30%, GhostWhite);
+}
+
+section .card .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background:#f270df ;
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card{
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  margin: 20px 0;
+  width: 280px;
+}
+
+.card::before {
+  content: "";
+  position: relative;
+  height: 45%;
+  width: 100%;
+  background: #f270df;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.card .media-icons {
+  position:absolute;
+  top: 10px;
+  right: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .media-icons i{
+  margin-top: 10px;
+  color: #f270df;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card .media-icons i:hover{
+  opacity: 1;
+  color: #58004b;
+}
+
+.card .name-int{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #f270df;
+}
+
+.name-int .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-int .idade{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.swiper{
+  width: 950px;
+
+}
+
+.swiper-button-next, .swiper-button-prev,.swiper-pagination{
+  color: #f270df !important;
+}
+
+.swiper-pagination-bullet{
+  height: 7px !important;
+  width: 26px !important;
+  border-radius: 25px !important;
+  background: #f270df !important;
+}
